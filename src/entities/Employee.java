@@ -29,4 +29,11 @@ public class Employee implements Comparable<Employee> {
 	public int compareTo(Employee other) {
 		return name.compareTo(other.getName());
 	}
+	
+	@Override
+	public String toString() {
+		return name
+				+ ", "
+				+ String.format("%.2f", salary);
+	}
 }
